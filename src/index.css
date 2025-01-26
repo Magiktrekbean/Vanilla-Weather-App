@@ -18,23 +18,31 @@ body {
     margin: 15px;
 }
 
+.search-input::placeholder {
+    color: #ff467e;
+}
+
 .search-input {
     background-color: #fafafa;
+    color: #ff467e;
     border-radius: 7px;
     width: 80%;
     padding: 10px;
     font-family: "Playwrite IN", serif;
     font-size: larger;
+    border-color: #f12b6b;
 
 }
 
 .search-button {
     background: #fafafa;
+    color: #ff467e;
     padding: 10px;
     border-radius: 7px;
     margin-left: 5px;
     font-family: "Playwrite IN", serif;
     font-size: larger;
+    border-color: #f12b6b;
 }
 
 header {
