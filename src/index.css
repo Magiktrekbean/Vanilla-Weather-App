@@ -1,0 +1,55 @@
+body {
+    background: radial-gradient(329px at 3.1% 9.3%, rgb(251, 204, 235) 28.1%, rgba(221, 221, 221, 0.15) 1200%);
+    font-family: "Bellota", serif;
+    font-style: normal;
+}
+
+.container {
+    background: #f3dfe3;
+    max-width: 800px;
+    margin: 45px auto;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+    border-radius: 10px;
+    padding: 15px 20px;
+
+}
+
+.search-city {
+    margin: 15px;
+}
+
+.search-input {
+    background-color: #fafafa;
+    border-radius: 7px;
+    width: 80%;
+    padding: 10px;
+    font-family: "Playwrite IN", serif;
+    font-size: larger;
+
+}
+
+.search-button {
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 7px;
+    margin-left: 5px;
+    font-family: "Playwrite IN", serif;
+    font-size: larger;
+}
+
+header {
+    border-bottom: 1px solid #e9b2bc;
+    border-width: 2px;
+    padding: 0 0 20px 0;
+}
+
+footer {
+    border-top: 1px solid #e9b2bc;
+    border-width: 2px;
+    padding: 20px 0 0 0;
+    margin-top: 20px;
+}
+
+a {
+    color: #f12b6b;
+}
