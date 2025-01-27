@@ -6,6 +6,9 @@ function updateWeather(response) {
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.condition.description;
 
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.city;
 }
