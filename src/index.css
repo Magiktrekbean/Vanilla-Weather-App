@@ -49,6 +49,29 @@ header {
     border-bottom: 1px solid #e9b2bc;
     border-width: 2px;
     padding: 0 0 20px 0;
+    margin-bottom: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+p strong {
+    color: #f12b6b;
+    font-weight: bolder;
+}
+
+h1 {
+    margin: 0;
+    font-size: 38px;
+    line-height: 48px;
 }
 
 footer {
