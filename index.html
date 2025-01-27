@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pink Weather</title>
+
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="src/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
 </head>
 
 <body>
@@ -25,7 +28,7 @@
         </header>
         <main>
             <div class="weather-details">
-                <h1 id="city">Lexington</h1>
+                <h1 id="city"></h1>
                 <p>Tuesday 20:57, clear sky
                     <br />
                     Humidity: <strong>58%</strong>, Wind: <strong>2.57km/h</strong>
@@ -33,7 +36,7 @@
             </div>
             <div class="today-temp">
                 <div class="icon">🙅🏿‍♀️🌚</div>
-                <div class="degree">5</div>
+                <div class="degree" id="degree"></div>
                 <div class="unit">°F</div>
             </div>
         </main>
@@ -47,6 +50,7 @@
     </div>
 
     <script src="src/index.js"></script>
+
 </body>
 
 </html>
