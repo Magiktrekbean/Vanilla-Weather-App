@@ -19,13 +19,13 @@
 <body>
     <div class="container">
         <header>
-            <form class="search-city"> <input type="search" placeholder="Please enter a city🌸🌸🌸"
-                    class="search-input"><input type="submit" value="search🎀" class="search-button">
+            <form class="search-city" id="search-city"> <input type="search" placeholder="Please enter a city🌸🌸🌸"
+                    class="search-input" id="search-input"><input type="submit" value="search🎀" class="search-button">
             </form>
         </header>
         <main>
             <div class="weather-details">
-                <h1>Lexington</h1>
+                <h1 id="city">Lexington</h1>
                 <p>Tuesday 20:57, clear sky
                     <br />
                     Humidity: <strong>58%</strong>, Wind: <strong>2.57km/h</strong>
@@ -45,6 +45,8 @@
             <a href="https://girlsgetweather.netlify.app/" target="_blank">hosted by Netlify</a>
         </Footer>
     </div>
+
+    <script src="src/index.js"></script>
 </body>
 
 </html>
