@@ -3,6 +3,9 @@ function updateWeather(response) {
   let degree = response.data.temperature.current;
   degreeElement.innerHTML = Math.round(degree);
 
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.condition.description;
+
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.city;
 }
