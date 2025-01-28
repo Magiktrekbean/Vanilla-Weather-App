@@ -17,6 +17,9 @@ function updateWeather(response) {
   console.log(date);
   timeElement.innerHTML = formatDate(date);
 
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon" />`;
+
   console.log(response.data.temperature);
 
   let cityElement = document.querySelector("#city");
