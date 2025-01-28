@@ -63,7 +63,7 @@ p {
     font-weight: 500;
 }
 
-p strong {
+.humidity-wind {
     color: #f12b6b;
     font-weight: bolder;
 }

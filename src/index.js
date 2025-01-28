@@ -17,7 +17,8 @@ function updateWeather(response) {
   console.log(date);
   timeElement.innerHTML = formatDate(date);
 
-  console.log(response.data.wind);
+  console.log(response.data.temperature);
+
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.city;
 }
