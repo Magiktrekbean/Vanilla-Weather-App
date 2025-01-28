@@ -12,9 +12,24 @@ function updateWeather(response) {
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
 
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
+  console.log(date);
+  timeElement.innerHTML = formatDate(date);
+
   console.log(response.data.wind);
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.city;
+}
+function formatDate(date) {
+  let options = {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+  };
+  return date.toLocaleString(`en-US`, options);
 }
 function userSearch(city) {
   let apiKey = "594b61tf99f8e42c306162ocb32f8ac6";
