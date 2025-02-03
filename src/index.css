@@ -114,7 +114,7 @@ h1 {
 .day {
     text-align: center;
     line-height: 20px;
-    color: #fd94b4;
+    color: #f76b8a;
     font-size: 18px;
 }
 
@@ -137,6 +137,8 @@ h1 {
 
 .temp-low {
     padding: 0 10px;
+    font-weight: 50;
+    color: #f12b6b
 }
 
 footer {
