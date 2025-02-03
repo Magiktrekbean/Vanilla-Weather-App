@@ -47,9 +47,13 @@ function searchCityForm(event) {
   userSearch(searchInput.value);
 }
 function displayForecast() {
-  let forecast = document.querySelector("#forecast");
-  forecast.innerHTML = ` <div class="day-forecast">
-                <div class="day">Mon</div>
+  let days = ["Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      ` <div class="day-forecast">
+                <div class="day">${day}</div>
                 <div class="icon-forecast">👒</div>
                 <div class="temp">
                     <div class="temp-high">
@@ -58,6 +62,10 @@ function displayForecast() {
                     <div class="temp-low">65°</div>
                 </div>
             </div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
 }
 let searchCityElement = document.querySelector("#search-city");
 searchCityElement.addEventListener("submit", searchCityForm);
