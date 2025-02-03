@@ -106,6 +106,39 @@ h1 {
     color: #fd94b4;
 }
 
+.forecast {
+    display: flex;
+    justify-content: space-around;
+}
+
+.day {
+    text-align: center;
+    line-height: 20px;
+    color: #fd94b4;
+    font-size: 18px;
+}
+
+.icon-forecast {
+    font-size: 38px;
+    text-align: center;
+    margin: 15px 10px 20px;
+}
+
+.temp {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.temp-high {
+    color: #f12b6b;
+    font-weight: bolder;
+}
+
+.temp-low {
+    padding: 0 10px;
+}
+
 footer {
     border-top: 1px solid #e9b2bc;
     border-width: 2px;
