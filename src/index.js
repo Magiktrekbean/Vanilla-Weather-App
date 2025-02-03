@@ -46,8 +46,21 @@ function searchCityForm(event) {
 
   userSearch(searchInput.value);
 }
-
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = ` <div class="day-forecast">
+                <div class="day">Mon</div>
+                <div class="icon-forecast">👒</div>
+                <div class="temp">
+                    <div class="temp-high">
+                        <strong>70°</strong>
+                    </div>
+                    <div class="temp-low">65°</div>
+                </div>
+            </div>`;
+}
 let searchCityElement = document.querySelector("#search-city");
 searchCityElement.addEventListener("submit", searchCityForm);
 
 userSearch("Dry Ridge");
+displayForecast();
