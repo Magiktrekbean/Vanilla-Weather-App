@@ -119,9 +119,13 @@ h1 {
 }
 
 .icon-forecast {
-    font-size: 38px;
+    width: 80px;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 15px;
     text-align: center;
-    margin: 15px 10px 20px;
+    display: block;
+    margin: 0 auto;
 }
 
 .temp {
