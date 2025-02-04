@@ -14,16 +14,15 @@ function updateWeather(response) {
 
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
-  console.log(date);
+
   timeElement.innerHTML = formatDate(date);
 
   let iconElement = document.querySelector("#icon");
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon" />`;
 
-  console.log(response.data.temperature);
-
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.city;
+  getForecast(response.data.city);
 }
 function formatDate(date) {
   let options = {
@@ -46,7 +45,14 @@ function searchCityForm(event) {
 
   userSearch(searchInput.value);
 }
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "594b61tf99f8e42c306162ocb32f8ac6";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+
+  axios(apiUrl).then(displayForecast);
+}
+function displayForecast(response) {
+  console.log(response.data);
   let days = ["Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
   let forecastHtml = "";
   days.forEach(function (day) {
@@ -71,4 +77,3 @@ let searchCityElement = document.querySelector("#search-city");
 searchCityElement.addEventListener("submit", searchCityForm);
 
 userSearch("Dry Ridge");
-displayForecast();
