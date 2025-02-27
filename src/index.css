@@ -120,7 +120,7 @@ h1 {
 
 .icon-forecast {
     width: 80px;
-    height: 80px;
+    height: 100px;
     padding-top: 10px;
     padding-bottom: 15px;
     text-align: center;
@@ -155,4 +155,24 @@ footer {
 
 a {
     color: #f12b6b;
+}
+@media(max-width:576px){
+    .container{max-width: fit-content;}
+main{max-width: 300px;}
+   .weather-details{font-size: 18px;}
+   .girl{
+display: flex;
+align-self: center;
+}
+.degree{font-size: 80px;
+margin-left: 0;
+padding-left: 0;}
+img.icon{margin-left: 0;
+padding-left: 0;}
+img.icon-forecast{font-size: 10px;
+    height: 35px;
+    padding: 0; 
+    margin: 0;
+width: 35px}
+div.temp {font-size: 12px ;}
 }
